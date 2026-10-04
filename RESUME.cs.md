@@ -1,7 +1,10 @@
 ---
-schema_version: 10
+schema_version: 11
 type: other
+category_override: none
 file_count: 12
+file_extensions: cs:6, md:2, png:2, csproj:1, noext:1, resx:1, slnx:1, xaml:1, xml:1
+file_extensions_updated: 2026-10-04
 avg_lines_per_file: 50
 total_lines: 324
 metrics_lm: 2026-10-04 16:02:36
