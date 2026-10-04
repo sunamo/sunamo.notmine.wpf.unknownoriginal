@@ -39,4 +39,4 @@ Doporučení přesunu do sunamocz-legacy.visualstudio.com: **20 %** — Kopie ci
 ## Vazby na moje repa
 
 - Submoduly: žádné
-- ProjectReference / PackageReference: žádné
+- ProjectReference / PackageReference: `SunamoExceptions` (PackageReference), `SunamoShared` (PackageReference), `Lang` (ProjectReference, cíl chybí)
