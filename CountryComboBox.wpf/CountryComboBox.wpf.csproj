@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DefineConstants>DEBUG2;DEBUG;TRACE;ASYNC;CountryComboBox.wpf;CountryComboBox.wpf.csproj</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG2;DEBUG;TRACE;ASYNC;CountryComboBox.wpf;CountryComboBox.wpf.csproj</DefineConstants>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Images\Countries\cz.png">
+    </Content>
+    <Content Include="Images\Countries\gb.png">
+    </Content>
+    <EmbeddedResource Include="XML\countries.xml">
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Projects\PlatformIndependentNuGetPackages\Lang\Lang.csproj" />
+    <PackageReference Include="SunamoExceptions" Version="*" />
+    <PackageReference Include="SunamoShared" Version="*" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0">
+    </PackageReference>
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0">
+    </PackageReference>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0">
+    </PackageReference>
+  </ItemGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>$(DefineConstants);ASYNC;CountryComboBox.wpf;CountryComboBox.wpf.csproj</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>$(DefineConstants);ASYNC;CountryComboBox.wpf;CountryComboBox.wpf.csproj</DefineConstants>
+  </PropertyGroup>
+</Project>
