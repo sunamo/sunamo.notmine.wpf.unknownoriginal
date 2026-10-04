@@ -1,6 +1,6 @@
 ---
 schema_version: 11
-type: other
+type: real-app
 category_override: none
 file_count: 12
 file_extensions: cs:6, md:2, png:2, csproj:1, noext:1, resx:1, slnx:1, xaml:1, xml:1
